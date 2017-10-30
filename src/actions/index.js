@@ -1,6 +1,9 @@
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 
+
+// export const DELETE_POST = 'DELETE_POST'
+
 // Our action creators will return
 // an action packet that our reducer will
 // receive. What does the action packet look like?
@@ -11,9 +14,22 @@ export const DECREMENT = 'DECREMENT';
 
 export const increment = () => {
    // Fill in this function 
+   return {
+     type: INCREMENT
+   }
 };
 
 
 export const decrement = () => {
    // Fill in this function 
+   return {
+     type: DECREMENT
+   }
 };
+
+// export const deletePost = (postId) => {
+//   return {
+//     type: 'DELETE_POST',
+//     payload: postId
+//   }
+// }
